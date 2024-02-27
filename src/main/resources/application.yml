@@ -1,0 +1,32 @@
+logging:
+  level:
+    org.springframework: warn
+  config: classpath:log.xml
+
+spring:
+  profiles:
+    active: config
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  devtools:
+    restart:
+      enabled: true
+  application:
+    name: fantasy-skin-server
+
+server:
+  servlet:
+    context-path: /
+  undertow:
+    max-http-post-size: -1
+    buffer-size: 512
+    direct-buffers: true
+    threads:
+      io: 8
+      worker: 256
+  port: 8899

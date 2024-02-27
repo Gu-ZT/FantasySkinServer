@@ -18,4 +18,5 @@ public class User extends AbstractSqlBase { // 用户
     private Long player; // 主角色ID
     private String playerList; // 角色列表
     private String suitList; // 套装列表
+    private Long permission; // 权限
 }
