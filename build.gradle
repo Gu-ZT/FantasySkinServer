@@ -25,6 +25,8 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter-web:${spring_boot_version}"
     implementation "org.springframework.boot:spring-boot-starter-validation:${spring_boot_version}"
     implementation "org.springframework.boot:spring-boot-starter-mail:${spring_boot_version}"
+    implementation "org.springframework.cloud:spring-cloud-dependencies:${spring_cloud_ext_version}"
+    implementation "org.springframework.cloud:spring-cloud-context:${spring_cloud_version}"
     implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatis_spring_boot_starter_version}"
     implementation "com.alibaba.fastjson2:fastjson2:${fastjson2_version}"
     implementation "com.google.code.gson:gson:${gson_version}"
@@ -36,6 +38,7 @@ dependencies {
     testImplementation "org.springframework.boot:spring-boot-starter-test:${spring_boot_version}"
     implementation "com.baomidou:mybatis-plus-boot-starter:${mybatis_plus_version}"
     implementation "com.baomidou:mybatis-plus-extension:${mybatis_plus_version}"
+    implementation "commons-io:commons-io:${commons_io_version}"
 }
 
 tasks.named('test') {

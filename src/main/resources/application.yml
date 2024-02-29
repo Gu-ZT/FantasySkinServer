@@ -29,4 +29,13 @@ server:
     threads:
       io: 8
       worker: 256
-  port: 8899
+  port: 8898
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
+#  endpoint:
+#    refresh:
+#      enabled:
